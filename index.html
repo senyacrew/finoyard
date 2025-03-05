@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <style>
+        .bg-image {
+            background-image: url('your-image-url.jpg');
+            /* Замените на URL вашей картинки */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="font-sans overflow-x-hidden">
+
+        <!-- Navbar -->
+
+        <nav class="bg-gray-900 fixed w-full z-20 top-0 start-0 bg-gray-800 bg-opacity-70 backdrop-blur-md">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Finoyard</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a class="mx-4" href="https://t.me/mngbatars" target="_blank" rel="nofollow" aria-label="Telegram"
+                        title="Telegram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg"
+                            role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z"
+                                fill="#ffffff" />
+                        </svg>
+                    </a>
+                    <a href="#form"
+                        class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-1 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm px-4 py-2 text-center">Начать
+                        сейчас</a>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                            <a href="#about"
+                                class="block py-2 px-3 text-gray-300 rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">О
+                                нас</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="block py-2 px-3 text-gray-300 rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#steps"
+                                class="block py-2 px-3 text-gray-300 rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white">Этапы</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End navbar -->
+
+
+
+
+
+
+        <!-- Background Image Section -->
+
+        <div class="relative bg-cover bg-center h-screen bg-no-repeat"
+            style="background-image: url('./assets/scale_1200_Казнь.png');">
+            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Затемнение -->
+            <div class="flex flex-col items-center justify-center h-full relative z-10">
+                <h2 class="text-4xl text-white"> Finoyard — ваши финансы - наша работа!</h2>
+                <div class="h-1 w-48 bg-white rounded-full mb-4 mt-5"></div>
+                <p class="text-2xl font-light text-white">Мы бесплатно позаботимся о вашем выборе!
+                </p>
+            </div>
+        </div>
+
+        <!-- Этапы работы -->
+        <section id="steps" class="py-20 bg-white">
+            <!-- Дебетовые карты этапы -->
+            <div class="mb-8 px-4">
+                <div class="flex justify-center mb-4">
+                    <h2 class="font-bold text-2xl">Дебетовые карты:</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">1
+                        </div>
+                        <p class="text-wrap mt-2 w-40 text-center">Подбор подходящего варианта</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 rounded-full"></div>
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">2
+                        </div>
+                        <p class="mt-2">Заявка</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 rounded-full"></div>
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">3
+                        </div>
+                        <p class="mt-2">Получение</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Кредитные карты и МФО этапы -->
+            <div class="px-4">
+                <div class="flex justify-center mb-4">
+                    <h2 class="font-bold text-2xl">Кредитные карты:</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">1
+                        </div>
+                        <p class="text-wrap mt-2 w-40 text-center">Подбор подходящего варианта</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 sm:mb-0"></div>
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">2
+                        </div>
+                        <p class="mt-2 text-center">Заявка</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 sm:mb-0"></div>
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">3
+                        </div>
+                        <p class="mt-2 text-center">Обратная связь от банка</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 sm:mb-0"></div>
+                    <div class="flex flex-col items-center mb-4 sm:mb-0">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">4
+                        </div>
+                        <p class="mt-2 text-center">Получение</p>
+                    </div>
+                </div>
+
+                <!-- <div class="flex flex-row sm:flex-col md:flex-col xl:flex-row justify-between xl:items-center ">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">1
+                        </div>
+                        <p class="text-wrap mt-2 w-40">Подбор подходящего варианта</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 rounded-full"></div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">2
+                        </div>
+                        <p class="mt-2">Заявка</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 rounded-full"></div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">3
+                        </div>
+                        <p class="mt-2">Обратная связь от банка</p>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-900 mx-4 mb-5 rounded-full"></div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900 rounded-full w-10 h-10 flex items-center justify-center text-white">4
+                        </div>
+                        <p class="mt-2">Получение</p>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id="services" class="pt-10 bg-gray-100">
+            <div class="container mx-auto">
+                <section class="py-20 bg-gray-100">
+                    <div class="container mx-auto">
+                        <h2 class="text-center text-4xl mb-10">Наши банки партнеры</h2>
+
+                        <h2 class="text-center text-2xl mb-10">Дебетовые карты</h2>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/mtsDebet.jpg" alt="mts"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold my-2">МТС Банк - Дебетовая карта «МТС Деньги»</h3>
+
+                                <ul class="text-gray-900 list-disc list-inside mb-2">
+                                    <li>МТС Premium - до 6 месяцев подписки в подарок</li>
+                                    <li>До 30% кешбэка каждый месяц в любимых категориях</li>
+                                    <li>Максимальный размер кешбэка - 10 000 ₽/мес</li>
+                                    <li>1500 руб/мес для категории 15% Маркетплейсы</li>
+                                    <!-- <li>250 руб/мес для категории 30% Оплата мобильной связи МТС</li>
+                                    <li>1000 руб/мес для категории 5% Супермаркеты</li>
+                                    <li>5% кешбэка за покупки в супермаркетах</li>
+                                    <li>0 ₽ всегда - выпуск и обслуживание, платежи и переводы</li>
+                                    <li>30% кешбэка за оплату связи МТС с подпиской МТС Premium</li>
+                                    <li>До 10 000 ₽ кешбэка в месяц</li> -->
+                                </ul>
+                                <p class="text-gray-900">Скидка: 1% — на любые покупки, 3% — на покупки в интернете
+                                    первые
+                                    два месяца и дальше при совершении 25 покупок за предыдущий месяц, а также для
+                                    зарплатных клиентов.</p>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xplink.io/click?pid=7662&offer_id=1725" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/vtbDebet.jpg" alt="vtb"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Банк ВТБ - Дебетовая карта ВТБ</h3>
+                                <p class="text-gray-900">Преимущества:</p>
+                                <ul class="text-gray-900 list-disc list-inside mb-2">
+                                    <li>Бесплатное обслуживание и выпуск карты без каких-либо условий</li>
+                                    <li>Кешбэк до 3000 рублей в категориях на выбор</li>
+                                    <li>Кешбэк рублями до 50% за покупки у партнеров</li>
+                                    <!-- <li>Безопасная и быстрая оплата покупок смартфоном с помощью сервиса бесконтактной
+                                        оплаты ВТБ Pay</li>
+                                    <li>Удобное получение выплат от государства в бюджетной сфере: зарплата и пособия
+                                        зачисляются прямо на карту</li>
+                                    <li>Переводы по номеру телефона и снятие наличных без комиссии</li>
+                                    <li>Оплата ЖКХ, штрафов ГИБДД, сотовой связи, интернета, переводы через СБП без
+                                        комиссии
+                                    </li> -->
+                                </ul>
+                                <p class="text-gray-900">Размер скидки: 10 000 ₽/мес. Реферальная программа «Приведи
+                                    друга»
+                                    позволяет получить 1000₽ за рекомендацию карты новому клиенту банка.</p>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xplink.io/click?pid=7662&offer_id=13" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/gazpromDebet.jpg" alt="gazp"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">ГазпромБанк - Дебетовая карта «Мир»</h3>
+                                <p class="text-gray-900">Преимущества карты:</p>
+                                <ul class="text-gray-900 list-disc list-inside mb-2">
+                                    <!-- <li>Лучшая дебетовая карта для ежедневных покупок – Национальная банковская премия в
+                                        2023 г.</li>
+                                    <li>Доступно 2 программы лояльности на выбор:</li>
+                                    <li>«Умный кешбэк»: 5% кешбэк на Обувь, Одежду, АЗС, Аптеки, Такси, Транспорт и 1 %
+                                        на
+                                        остальные покупки по карте с подключением Газпромбанк Привилегии</li>
+                                    <li>«Понятный кешбэк»: 2% баллами за покупки по карте с подключением Газпромбанк
+                                        Привилегии</li> -->
+                                    <li>Бесплатное обслуживание без дополнительных условий.</li>
+                                    <li>До 24% годовых по накопительному счету для новых клиентов</li>
+                                    <li>До 65% скидка на мобильную связь Газпромбанк Мобайл</li>
+                                    <li>Кешбэк у партнеров до 50%</li>
+                                    <!-- <li>Улучшенные возможности карты с сервисом Газпромбанк Привилегии: карта
+                                        выпускается с
+                                        подключенным сервисом</li>
+                                    <li>Возможность дополнительно выпустить платежный стикер и оплачивать покупки в одно
+                                        касание</li> -->
+                                </ul>
+                                <p class="text-gray-900">Возможности с Газпромбанк Привилегии: С первых дней вам
+                                    доступны
+                                    расширенные возможности карты с сервисом Газпромбанк Привилегии: бесплатно — 1
+                                    месяц,
+                                    далее — 299 ₽/мес.</p>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xplink.io/click?pid=7662&offer_id=1012" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/foreDebet.jpg" alt="fora"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Фора-Банк - Дебетовая карта МИР «Все включено»
+                                </h3>
+                                <p class="text-gray-900">Преимущества:</p>
+                                <ul class="text-gray-900 list-disc list-inside mb-2">
+                                    <li>Повышенный кешбэк, скидки до 35% и выплаты кешбэка в рублях до 10 000 ₽/мес.
+                                    </li>
+                                    <!-- <li>Стоимость обслуживания:</li>
+                                    <li>0₽ — при покупках от 15 000₽ в месяц</li>
+                                    <li>0₽ — при остатке по счету карты от 30 000₽ в течение месяца</li>
+                                    <li>0₽ — для работников бюджетной сферы, пенсионеров и студентов</li>
+                                    <li>99₽ — в месяц, в иных ситуациях</li> -->
+                                </ul>
+                                <p class="text-gray-900">Преимущества:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>До 5% выгода при покупке топлива в приложении «Турбо» по карте банка (2% скидка
+                                        + 3%
+                                        кешбэк) и 3% кешбэк на кофе на АЗС.</li>
+                                    <li>2% кешбэк в сети ресторанов «The БЫК» (до 2000 ₽/мес.)</li>
+                                    <li>До 35% кешбэк и скидки при покупках у партнеров банка.</li>
+                                    <li>До 1% кешбэк на остальные покупки.</li>
+                                </ul>
+                                <p class="text-gray-900">Срок действия карты — 5 лет.</p>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://https://trk.xplink.io/click?pid=7662&offer_id=952" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/sovkDebet.jpg" alt="sovkom"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Совкомбанк - Дебетовая карта с кешбэком</h3>
+                                <p class="text-gray-900">Преимущества:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <!-- <li>Кэшбэк до 30%</li>
+                                    <li>Повышенный кэшбэк на популярные категории (образование, топливо, дом и ремонт,
+                                        аптеки, медицина, рестораны и кафе, детские товары и т.д.)</li> -->
+                                    <li>Бесплатный выпуск: онлайн 24/7 с получением в любом удобном офисе.</li>
+                                    <li>Бесплатное снятие наличных: комиссия 0 руб. на сумму до 150 000 рублей.</li>
+                                    <li>Бесплатное обслуживание: вы не платите за годовое обслуживание и перевыпуск.
+                                    </li>
+                                </ul>
+                                <p class="text-gray-900">Кешбэк:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>5 динамических категорий с повышенным кэшбэком до 30%.</li>
+                                    <li>1% - за покупки в остальных категориях, не более 5000 руб/месяц.</li>
+                                    <li>Минимальная сумма оборота для начисления кешбэка 10 000 рублей.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xplink.io/click?pid=7662&offer_id=1052" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/tinkDebet.jpg" alt="sovkom"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Т-Банк — Black</h3>
+                                <p class="text-gray-900">Кэшбэк в рублях — до 30% по спецпредложениям от партнеров:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <!-- <li>Кэшбэк до 30%</li>
+                                    <li>Повышенный кэшбэк на популярные категории (образование, топливо, дом и ремонт,
+                                        аптеки, медицина, рестораны и кафе, детские товары и т.д.)</li> -->
+                                    <li>Обслуживание бесплатно (если на карте, вкладах, накопительных и брокерских
+                                        счетах каждый день в сумме хранится не менее 50 000 ₽), в остальных случаях 99
+                                        руб в месяц.</li>
+                                    <li>Возможность выбора 4-х любимых категорий каждый месяц с повышенным кэшбеком
+                                        15%.</li>
+                                    <li>Бесплатная виртуальная карта с моментальным выпуском и бесплатным обслуживанием.
+                                    </li>
+                                </ul>
+                                <p class="text-gray-900">Tinkoff Black — главная дебетовая карта Тинькофф, с кэшбэком в
+                                    рублях и процентом на остаток. Универсальна для получения зарплаты, пособий,
+                                    пенсий, оплаты повседневных покупок и решения финансовых задач. </p>
+
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xpgoal.io/click?pid=7662&offer_id=1820" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/gazpPremDebet.jpg" alt="sovkom"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Газпромбанк - Дебетовая карта Премиум МИР Supreme
+                                </h3>
+
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>Кешбэк в рублях до 15% по премиальной карте Газпромбанка,
+                                        суммарно — до 40 000 рублей (с сервисом Привилегии «Премиум»).</li>
+                                    <li>Абонемент «Fitmost» или Абонемент «X-FIT» на 30 дней или 2 персональные
+                                        тренировки в
+                                        «World Class» + спортивная страховка.</li>
+                                    <li> До 24% годовых по накопительному счету «Премиум», доступному только клиентам с
+                                        подключённым сервисом Привилегии «Премиум».</li>
+                                    <li>Также у клиентов есть возможность получать премиальные привилегии без каких-либо
+                                        условий за 2 990 рублей в месяц.</li>
+                                </ul>
+
+                                <p class="text-gray-500 text-xs">В первый месяц подключения сервис Привилегии «Премиум»
+                                    предоставляется бесплатно, далее также бесплатно при выполнении одного из условий:
+                                </p>
+                                <ul class="text-gray-500 text-xs list-disc list-inside">
+                                    <li>остаток на счетах Газпромбанка от 1 млн рублей и покупки по карте банка на сумму
+                                        от 50 000 рублей в месяц;</li>
+                                    <li>остатки на счетах банка на сумму от 2 млн рублей;</li>
+                                    <li>начисление заработной платы на карту банка в размере от 250 000 рублей и траты
+                                        по карте от 50 000 рублей в месяц.</li>
+                                </ul>
+
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xplink.io/click?pid=7662&offer_id=1870" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/debit/vtbStiker.jpg" alt="akbars"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">ВТБ - Платежный стикер</h3>
+                                <p class="text-gray-900">Преимущества для клиентов:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>Бесплатное обслуживание без скрытых условий.</li>
+                                    <li>Выпуск и обслуживание платежного стикера – бесплатно до 31.12.24. Далее - 49 р.
+                                        в месяц.</li>
+                                    <li>Бесплатно - при покупках на сумму более 10 000 руб в месяц.</li>
+                                    <li>Бесплатная доставка курьером.</li>
+                                    <li>До 22% по накопительному ВТБ-счету.</li>
+                                    <li>Кешбэк 2% за покупки в категориях:</li>
+                                    <ul>
+                                        <li>Супермаркеты.</li>
+                                        <li>Рестораны и кафе.</li>
+                                        <li>Такси и городской транспорт.</li>
+                                    </ul>
+                                    <li>Кешбэк до 50% от партнеров банка.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://https://trk.xplink.io/click?pid=7662&offer_id=1268" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Кредитные карты -->
+                        <h2 class="text-center text-2xl my-10">Кредитные карты</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/credit/uralSib.png" alt="uralsib"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Уралсиб Банк - Кредитная карта «120 дней»</h3>
+                                <p class="text-gray-900">Преимущества для клиентов:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>До 1 млн ₽ кредитный лимит;</li>
+                                    <li>Бесплатное обслуживание;</li>
+                                    <li>До 120 дней без процентов;</li>
+                                    <li>Для оформления нужен только паспорт;</li>
+                                    <!-- <li>От 19,9% ставка по кредиту;</li>
+                                    <li>Кешбэк до 3%;</li> -->
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://https://trk.xplink.io/click?pid=7662&offer_id=1841" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/credit/zenit.png" alt="zenit"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Банк Зенит - кредитная карта с кешбэком</h3>
+                                <p class="text-gray-900">Преимущества кредитной карты:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>120 + 120 дней без %: два отдельных льготных периода;</li>
+                                    <li>Наличные без % на 4 месяца;</li>
+                                    <li>Бесплатный выпуск и обслуживание карты;</li>
+                                    <li>Кредитный лимит до 2 000 000 руб.;</li>
+                                    <!-- <li>Для выпуска карты с кредитным лимитом до 100 000 руб. нужен только паспорт;</li>
+                                    <li>До 35% кешбэк у партнеров + кешбэк до 7%;</li> -->
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xpgoal.io/click?pid=7662&offer_id=1061" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/credit/sber.png" alt="sberbank"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">СберБанк - кредитная карта</h3>
+                                <p class="text-gray-900">Преимущества Кредитной СберКарты:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>120 дней без процентов;</li>
+                                    <li>Ставка от 9,8%;</li>
+                                    <li>0 ₽ обслуживание и уведомления;</li>
+                                    <li>Кредитный лимит до 1 млн ₽;</li>
+                                    <!-- <li>Полная стоимость кредита - 46,932% годовых;</li>
+                                    <li>Снятие наличных без комиссии первые 30 дней;</li> -->
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://https://trk.xpgoal.io/click?pid=7662&offer_id=1896" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/credit/akbars.png" alt="akbars"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Ак Барс - Кредитная карта 115 дней</h3>
+                                <p class="text-gray-900">Преимущества для клиентов:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>Лимит кредитования — до 300 000 руб.;</li>
+                                    <li>Программа лояльности: 5% — Фастфуд, Развлечения и Одежда и обувь;</li>
+                                    <li>Максимальная сумма в месяц – 3 000 бонусов;</li>
+                                    <li>Бесплатное снятие наличных/переводы в пределах 50 тыс. руб./мес.;</li>
+                                    <!-- <li>Кешбэк 20% на операции в первые 30 дней после оформления карты (максимум 2000 бонусов);</li>
+                                    <li>Обслуживание — Без комиссии;</li>
+                                    <li>Моментальная выдача — в офисе банка и в этот же день.</li> -->
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/credit/tbankCredit.jpg" alt="akbars"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Т-Банк — Платинум</h3>
+                                <p class="text-gray-900">Преимущества для клиентов:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>Кредитный лимит до 1 000 000 рублей.</li>
+                                    <li>Мгновенное решение по кредиту, без поручителей и справок о доходах.</li>
+                                    <li>До 55 дней беспроцентный период за любые покупки по карте.</li>
+                                    <li>120 дней беспроцентный период за погашение картой других кредитов.</li>
+                                    <li>Процентная ставка от 12% годовых.</li>
+                                    <li>Обслуживание карты 590 рублей в год или 0 рублей, если нет операций по карте.
+                                    </li>
+                                    <!-- 
+                                    <li>До 12 месяцев без процентов за технику, одежду и другие покупки в рассрочку.</li>
+                                    <li>Бесплатная доставка карты уже сегодня, при оформлении до 20:00.</li>
+                                    <li>Перевод без комиссии до 50 000 рублей в месяц без подписки Pro и до 100 000
+                                        рублей в месяц – с подпиской.</li> -->
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="https://trk.xplink.io/click?pid=7662&offer_id=1335" target="_blank"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- МФО -->
+                        <!-- <h2 class="text-center text-2xl my-10">Микрофинансирование</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/zaymer.png" alt="Займер"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Займер - Онлайн займы на карту</h3>
+                                <p class="text-gray-900">Способ получения займа:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Зачисление на банковскую карту клиента;</li>
+                                    <li>Зачисление на банковский счет;</li>
+                                    <li>Зачисление на «Юmoney» кошелек;</li>
+                                    <li>Зачисление через систему «Контакт».</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/zaymigo.png" alt="Zaymigo"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Zaymigo - Моментальные онлайн займы</h3>
+                                <p class="text-gray-900">Информация о продукте:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Сумма первого займа: от 1 000 до 15 000 рублей;</li>
+                                    <li>Срок первого займа: от 5 до 30 дней;</li>
+                                    <li>Полная стоимость кредита от 292,000% до 292,000% годовых;</li>
+                                    <li>Процентная ставка в день: от 0 до 0,8%.</li>
+                                </ul>
+                                <p class="text-gray-900">Способы получения денег:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Банковская карта VISA / MasterCard / МИР;</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/amoney.png" alt="АДеньги"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">АДеньги - Условия получения займов</h3>
+                                <p class="text-gray-900">Условия получения займов:</p>
+                                <ul class="text-gray-900 list-disc list-inside">
+                                    <li>ПСК: 0-292% годовых;</li>
+                                    <li>Сумма: от 2000 до 30000 рублей;</li>
+                                    <li>Срок займа: от 7 до 30 дней;</li>
+                                    <li>Без поручителей, справок и залога;</li>
+                                </ul>
+                                <p class="text-gray-900">Способы получения:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Банковская карта;</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/finterra.png" alt="ФИНТЕРРА"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">ФИНТЕРРА - Первый заём на 21 день бесплатно</h3>
+                                <p class="text-gray-900">Способ выдачи:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Банковская карта VISA/MasterCard/МИР/Maestro;</li>
+                                    <li>Наличными через сервис Золотая корона;</li>
+                                    <li>Наличными в офисах продаж "Финтерра".</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/boostra.png" alt="Boostra"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Boostra - Микрозаймы по городам России</h3>
+                                <p class="text-gray-900">Типы займов:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Сумма займа: от 1 000 до 30 000 рублей;</li>
+                                    <li>Срок займа: от 7 до 16 дней;</li>
+                                    <li>ПСК: 0-292%.</li>
+                                </ul>
+                                <p class="text-gray-900">Преимущества:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Займ онлайн на карту;</li>
+                                    <li>Простой и быстрый способ;</li>
+                                    <li>Не выходя из дома/без похода в офис;</li>
+                                    <li>Без справок, без поручителей, без залога.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/moneyMan.png" alt="MoneyMan"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">MoneyMan - Микрофинансовая организация</h3>
+                                <p class="text-gray-900">Способ выдачи:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>На карты VISA, MasterCard и МИР;</li>
+                                    <li>Наличными через систему Unistream.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/smsFinance.png" alt="Смсфинанс"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Смсфинанс - Быстрые займы</h3>
+                                <p class="text-gray-900">Почему именно смсфинанс?</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>7 лет помогаем нашим клиентам;</li>
+                                    <li>За это время мы выдали более 1 000 000 займов;</li>
+                                    <li>Моментально одобряем, быстро переводим;</li>
+                                    <li>Переведём нужную сумму в любой момент.</li>
+                                </ul>
+                                <p class="text-gray-900">Сумма займа:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Первый займ от 3 000 до 30 000 рублей для новых клиентов;</li>
+                                    <li>Срок: от 1 до 21 дней;</li>
+                                    <li>ПСК: 0–292% годовых;</li>
+                                    <li>Ставка: до 0,8% в день;</li>
+                                    <li>АКЦИЯ: Беспроцентный период 7 дней на сумму до 30 000 рублей.</li>
+                                </ul>
+                                <p class="text-gray-900">Способы получения займа:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Перевод на валидированную банковскую карту;</li>
+                                    <li>Перевод на банковский счет.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/maxCredit.png" alt="Max.Credit"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">Max.Credit - Быстрый займ на банковскую карту
+                                </h3>
+                                <p class="text-gray-900">Условия получения займа:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Сумма займа: от 7 000 до 30 000 рублей, первый займ до 7 000 рублей;</li>
+                                    <li>Период кредитования: от 1 до 30 дней;</li>
+                                    <li>Решение по заявке до 15 минут;</li>
+                                    <li>Возможно досрочное погашение;</li>
+                                    <li>ПСК: 0–292%.</li>
+                                </ul>
+                                <p class="text-gray-900">Способ выдачи:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>На личную именную банковскую карту.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded shadow">
+                                <img src="./assets/mfo/migCredit.png" alt="МигКредит"
+                                    class="w-full h-32 object-contain rounded">
+                                <h3 class="text-lg font-semibold mt-2">МигКредит - Условия получения займов</h3>
+                                <p class="text-gray-900">Общие условия получения займов:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Сумма: от 3 000 до 100 000 рублей включительно;</li>
+                                    <li>Срок: от 5 дней до 1 года;</li>
+                                    <li>ПСК: 0–292% годовых;</li>
+                                    <li>Проценты: от 0% до 0,8% в день.</li>
+                                </ul>
+                                <p class="text-gray-900">Способы получения:</p>
+                                <ul class="text-gray-900 list-disc list-inside" style="margin: 2;">
+                                    <li>Банковская карта VISA, MasterCard, МИР.</li>
+                                </ul>
+                                <div class="flex justify-center mt-4">
+                                    <a href="#"
+                                        class="inline-block bg-gray-900 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 text-white rounded py-3 px-4">Заказать
+                                        услугу</a>
+                                </div>
+                            </div>
+
+
+                        </div> -->
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Почему выбирают нас -->
+            <section class="py-20 bg-white">
+                <div class="container mx-auto">
+                    <h2 class="text-center text-2xl mb-10">Почему выбирают нас</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-4 rounded-2xl shadow text-white">
+                            <div class="flex mb-3">
+                                <div
+                                    class="bg-gray-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-5">
+                                    1
+                                </div>
+                                <h3 class="font-semibold text-xl pt-2">Удобство</h3>
+                            </div>
+
+                            <p>Простая навигация сайта.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-4 rounded-2xl shadow text-white">
+                            <div class="flex mb-3">
+                                <div
+                                    class="bg-gray-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-5">
+                                    2
+                                </div>
+                                <h3 class="font-semibold text-xl pt-2">Быстрое оформление</h3>
+                            </div>
+
+                            <p>Оставить заявку вы можете за 5 минут.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-4 rounded-2xl shadow text-white">
+                            <div class="flex mb-3">
+                                <div
+                                    class="bg-gray-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-5">
+                                    3
+                                </div>
+                                <h3 class="font-semibold text-xl pt-2">Помощь в вашем оформлении</h3>
+                            </div>
+                            <p>Мы стремимся помочь вам с оформлением продуктов в кратчайшие сроки.
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-4 rounded-2xl shadow text-white">
+                            <div class="flex mb-3">
+                                <div
+                                    class="bg-gray-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-5">
+                                    4
+                                </div>
+                                <h3 class="font-semibold text-xl pt-2">Вам не придется выходить из дома</h3>
+                            </div>
+
+                            <p class="text-wrap">Все, что представлено в нашем каталоге услуг, имеет возможность
+                                оформления дистанционно.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-4 rounded-2xl shadow text-white">
+                            <div class="flex mb-3">
+                                <div
+                                    class="bg-gray-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-5">
+                                    5
+                                </div>
+                                <h3 class="font-semibold text-xl pt-2">Бесплатная консультация</h3>
+                            </div>
+                            <p>Мы предлагаем бесплатную консультацию, чтобы обсудить все ваши запросы к продукту.</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-4 rounded-2xl shadow text-white">
+                            <div class="flex mb-3">
+                                <div
+                                    class="bg-gray-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-5">
+                                    6
+                                </div>
+                                <h3 class="font-semibold text-xl pt-2">Индивидуальный подход</h3>
+                            </div>
+
+                            <p>Мы будем тесно сотрудничать с вами ,чтобы убедиться, что вы подобрали нужный вам вариант.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Отзывы -->
+            <section class="py-20 bg-gray-100">
+                <div class="container mx-auto">
+                    <h2 class="text-center text-2xl mb-10">Отзывы</h2>
+                    <div class="flex overflow-x-auto flex-wrap justify-evenly">
+                        <div class="bg-white p-4 rounded shadow w-64 my-4">
+
+                            <h3 class="font-semibold text-center">Ильгиз:</h3>
+                            <p class="text-gray-900">Удобно, что есть возможность консультации по продуктам.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow w-64 my-4">
+
+                            <h3 class="font-semibold text-center">Татьяна:</h3>
+                            <p class="text-gray-900">Попала в непредвиденную ситуацию, помогли с выбором кредитной
+                                карты, спасибо!!!</p>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow w-64 my-4">
+
+                            <h3 class="font-semibold text-center">Руслан:</h3>
+                            <p class="text-gray-900">Сайт супер, выбрал дебетовку для доната в игры. Советую, спасибо!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Оставить заявку -->
+            <section id="form" class="py-20 bg-gray-800">
+                <div class="container mx-auto">
+                    <h2 class="text-center text-4xl mb-10 text-white font-bold">Не знаете какой банк выбрать?</h2>
+                    <h2 class="text-center text-xl mb-10 text-white font-light">Оставьте заявку и наши менеджеры
+                        свяжутся с вами</h2>
+                    <form class="max-w-md mx-auto bg-gray-100 p-6 rounded shadow"
+                        action="https://formspree.io/f/xgvogyrl" method="POST">
+                        <div class="mb-4">
+                            <label class="block text-gray-700" for="name">Имя</label>
+                            <input class="w-full p-2 border border-gray-300 rounded" type="text" id="name"
+                                placeholder="Ваше имя" name="name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700" for="phone">Телефон</label>
+                            <input class="w-full p-2 border border-gray-300 rounded" type="tel" id="phone"
+                                placeholder="Ваш телефон" name="phone" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700" for="email">Email</label>
+                            <input class="w-full p-2 border border-gray-300 rounded" type="email" id="email"
+                                placeholder="Ваш email" name="email" required>
+                        </div>
+                        <button class="w-full bg-gray-900 text-white rounded py-2" type="submit">Оставить
+                            заявку</button>
+                    </form>
+                </div>
+            </section>
+
+            <div>
+                <!-- Часто задаваемые вопросы -->
+                <section id="about" class="py-20 bg-gray-100">
+                    <div class="container mx-auto">
+                        <h2 class="text-center text-2xl mb-10">Часто задаваемые вопросы</h2>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded shadow">
+                                <h3 class="font-semibold cursor-pointer"
+                                    onclick="this.nextElementSibling.classList.toggle('hidden')">Одобрят ли мне МФО без
+                                    КИ (кредитной истории)?</h3>
+                                <p class="hidden text-gray-900">Это зависит от банка. Каждый банк относится к каждому
+                                    человеку индивидуально. Консультируйтесь у наших менеджеров.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <h3 class="font-semibold cursor-pointer"
+                                    onclick="this.nextElementSibling.classList.toggle('hidden')">Какие документы
+                                    потребуются для заявки на МФО?</h3>
+                                <p class="hidden text-gray-900">Банки могут потребовать справку о доходах, трудовую
+                                    книжку, выписку из банка или другие документы, подтверждающие финансовое положение.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <h3 class="font-semibold cursor-pointer"
+                                    onclick="this.nextElementSibling.classList.toggle('hidden')">Какая дебетовая карта
+                                    имеет наибольший кэшбэк?</h3>
+                                <p class="hidden text-gray-900">Для уточнения данного вопроса , пожалуйста, обратитесь к
+                                    нашим специалистам.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <h3 class="font-semibold cursor-pointer"
+                                    onclick="this.nextElementSibling.classList.toggle('hidden')">Как пользоваться
+                                    кредитной картой выгодно?</h3>
+                                <p class="hidden text-gray-900">Важно обращать внимание на срок истечения льготного
+                                    периода и не забывать про минимальный платеж.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-black text-white py-4 w-full" style="height: 50vh;">
+                <div class="container mx-auto text-center">
+                    <p>&copy; 2025 Finoyard. Все права защищены.</p>
+                </div>
+            </footer>
+
+</body>
+
+</html>
